@@ -6,7 +6,7 @@ function UserListItem(props) {
   const { user, index, removeUser, selectUser } = props;
   
   const listItemStyle = {
-    backgroundColor: user.isSelected ? '#f0e2e2' : 'white'
+    backgroundColor: user.isSelected ? '#f0e2e2' : 'transparent'
   }
 
   return (
