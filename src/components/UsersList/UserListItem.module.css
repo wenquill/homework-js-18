@@ -18,15 +18,38 @@
     background-color: #f0e2e2;
 }
 
+.info {
+    width: 200px;
+}
+
 .deleteBtn {
     padding: 5px 10px;
+    margin-bottom: 12px;
     font-size: 30px;
     border: none;
     margin-left: auto;
     background-color: transparent;
+    align-self: flex-end;
 }
 
 .deleteBtn:hover {
     cursor: pointer;
     color:rgb(199, 133, 133);
+}
+
+.statistics {
+    margin-left: auto;
+    width: 400px;
+}
+
+.statisticsStreak {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #e0dfdf;
+}
+
+.statisticsStreakColored {
+    width: 50%;
+    padding: 10px 0;
+    margin-top: -20px;
 }
