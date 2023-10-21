@@ -1,0 +1,32 @@
+.photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.listItem:hover {
+    background-color: #f0e2e2;
+}
+
+.deleteBtn {
+    padding: 5px 10px;
+    font-size: 30px;
+    border: none;
+    margin-left: auto;
+    background-color: transparent;
+}
+
+.deleteBtn:hover {
+    cursor: pointer;
+    color:rgb(199, 133, 133);
+}
