@@ -26,19 +26,22 @@ function UserListItem(props) {
 
   return (
     <li style={listItemStyle} className={styles.listItem} onClickCapture={() => selectUser(index)}>
-      <div className={styles.imgCont}>
-        <img
-          className={styles.photo}
-          src={user.photoSrc}
-          alt={`${user.firstName} ${user.lastName}`}
-        />
+      <div className={styles.mainInfo}>
+        <div className={styles.imgCont}>
+          <img
+            className={styles.photo}
+            src={user.photoSrc}
+            alt={`${user.firstName} ${user.lastName}`}
+          />
+        </div>
+        <div className={styles.info}>
+          <p>
+            {user.firstName} {user.lastName}, {user.age}
+          </p>
+          <p>{user.profession}</p>
+        </div>
       </div>
-      <div className={styles.info}>
-        <p>
-          {user.firstName} {user.lastName}, {user.age}
-        </p>
-        <p>{user.username}</p>
-      </div>
+      <div className={styles.sideInfo}>
         <div className={styles.statistics}>
           <p>{user.statistics}%</p>
           <div className={styles.statisticsStreak}></div>
@@ -47,6 +50,7 @@ function UserListItem(props) {
         <button className={styles.deleteBtn} onClick={() => removeUser(index)}>
           <BiTrashAlt />
         </button>
+      </div>
     </li>
   );
 }

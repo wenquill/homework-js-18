@@ -1,3 +1,33 @@
+.usersList {
+    max-width: 1000px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px auto 0;
+    padding:0 40px;
+}
+
+.mainInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    flex-basis: 350px;
+}
+
+.sideInfo {
+    margin-bottom: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    flex-grow: 3;
+    flex-basis: 290px;
+}
+
 .photo {
     width: 100%;
     height: 100%;
@@ -6,16 +36,16 @@
 }
 
 .imgCont {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     padding: 10px;
+    flex-shrink: 0;
 } 
 
 .listItem {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    flex-wrap: wrap;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -25,12 +55,12 @@
 }
 
 .info {
-    width: 200px;
+    max-width: 200px;
 }
 
 .deleteBtn {
-    padding: 5px 10px;
-    margin-bottom: 12px;
+    padding: 0 10px;
+    margin-bottom: -10px;
     font-size: 30px;
     border: none;
     background-color: transparent;
@@ -43,7 +73,12 @@
 }
 
 .statistics {
-    width: 400px;
+    max-width: 400px;
+    padding: 0 10px;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .statisticsStreak {

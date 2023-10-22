@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import UserListItem from './UserListItem'
-import style from './UsersList.module.css'
+import style from './UserListItem.module.css'
 const USERS_DB = [
     {
       id: 1,
@@ -8,6 +8,7 @@ const USERS_DB = [
       lastName: 'York',
       age: 28,
       photoSrc: 'https://images.unsplash.com/photo-1635488640163-e5f6782cda6e?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGdpcmx8ZW58MHx8MHx8fDA%3D',
+      profession: 'Web Designer',
       statistics: 95,
     },
     {
@@ -17,7 +18,7 @@ const USERS_DB = [
       age: 31,
       photoSrc:
         'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      username: 'Web Designer',
+      profession: 'Web Designer',
       statistics: 56,
     },
     {
@@ -27,7 +28,7 @@ const USERS_DB = [
       age: 70,
       photoSrc:
         'https://images.unsplash.com/photo-1508186225823-0963cf9ab0de?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8',
-      username: 'Frontend Developer',
+      profession: 'Frontend Developer',
       statistics: 89,
     },
     {
@@ -37,7 +38,7 @@ const USERS_DB = [
       age: 20,
       photoSrc:
         'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWFufGVufDB8fDB8fHww',
-      username: 'System Administrator',
+      profession: 'System Administrator',
       statistics: 91,
     },
     {
@@ -47,7 +48,7 @@ const USERS_DB = [
       age: 28,
       photoSrc:
         'https://images.unsplash.com/photo-1557862921-37829c790f19?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFufGVufDB8fDB8fHww',
-      username: 'Data Analyst',
+      profession: 'Data Analyst',
       statistics: 33,
     }
   ]
