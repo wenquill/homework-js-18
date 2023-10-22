@@ -26,11 +26,13 @@ function UserListItem(props) {
 
   return (
     <li style={listItemStyle} className={styles.listItem} onClickCapture={() => selectUser(index)}>
-      <img
-        className={styles.photo}
-        src={user.photoSrc}
-        alt={`${user.firstName} ${user.lastName}`}
-      />
+      <div className={styles.imgCont}>
+        <img
+          className={styles.photo}
+          src={user.photoSrc}
+          alt={`${user.firstName} ${user.lastName}`}
+        />
+      </div>
       <div className={styles.info}>
         <p>
           {user.firstName} {user.lastName}, {user.age}
